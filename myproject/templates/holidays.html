@@ -1,0 +1,51 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+    Holiday Meals
+{% endblock %}
+
+{% block content %}
+<title>Holiday Meal Cards</title>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row">
+            <!-- Card 1: Roast Turkey -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="media\RoastedTurkey.jpg" class="card-img-top" alt="Roast Turkey">
+                    <div class="card-body">
+                        <h5 class="card-title">Roast Turkey</h5>
+                        <p class="card-text"><strong>Ingredients:</strong></p>
+                        <p class="card-text"><strong>Instructions:</strong></p>
+                        <a href="/roastturkey">View Recipe</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 2: Honey Glazed Ham -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="media/glazedham.jpg" class="card-img-top" alt="Honey Glazed Ham">
+                    <div class="card-body">
+                        <h5 class="card-title">Honey Glazed Ham</h5>
+                        <p class="card-text"><strong>Ingredients:</strong></p>
+                        <p class="card-text"><strong>Instructions:</strong></p>
+                        <a href="/glazedham">View Recipe</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 3: Pumpkin Pie -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="media\pumpkinpie.jpg.jpg" class="card-img-top" alt="Pumpkin Pie">
+                    <div class="card-body">
+                        <h5 class="card-title">Pumpkin Pie</h5>
+                        <p class="card-text"><strong>Ingredients:</strong></p>
+                        <p class="card-text"><strong>Instructions:</strong></p>
+                        <a href="/pumpkinpie">View Recipe</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

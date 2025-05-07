@@ -1,0 +1,26 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+    Vegetable Stir Fry Recipe
+{% endblock %}
+
+{% block content %}
+    <h1>Vegetable Stir Fry</h1>
+    <img src="{% static 'images/vegetable_stir_fry.jpg' %}" alt="Vegetable Stir Fry" />
+
+    <div class="ingredients">
+        <h2>Ingredients:</h2>
+        <ul>
+            {% for ingredient in ingredients %}
+                <li>{{ ingredient }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    <div class="instructions">
+        <h2>Instructions:</h2>
+        
+        </ol>
+    </div>
+{% endblock %}\
+

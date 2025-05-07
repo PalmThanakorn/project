@@ -1,0 +1,51 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+    Vegetarian Dishes
+{% endblock %}
+
+{% block content %}
+<title>Vegetarian Food Cards</title>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row">
+            <!-- Card 1: Vegetable Stir Fry -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="media/vegetable_stir_fry.jpg" class="card-img-top" alt="Vegetable Stir Fry">
+                    <div class="card-body">
+                        <h5 class="card-title">Vegetable Stir Fry</h5>
+                        <p class="card-text"><strong>Ingredients:</strong></p>
+                        <p class="card-text"><strong>Instructions:</strong><p>
+                        <a href="/vegetablestirfry">View Recipe</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 2: Caesar Salad -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="media/caesarsalad.jpg" class="card-img-top" alt="Caesar Salad">
+                    <div class="card-body">
+                        <h5 class="card-title">Caesar Salad</h5>
+                        <p class="card-text"><strong>Ingredients:</strong></p>
+                        <p class="card-text"><strong>Instructions:</strong></p>
+                        <a href="/caesarsalad">View Recipe</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 3: Lentil Soup -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="media/lentilsoup.jpg" class="card-img-top" alt="Lentil Soup">
+                    <div class="card-body">
+                        <h5 class="card-title">Lentil Soup</h5>
+                        <p class="card-text"><strong>Ingredients:</strong></p>
+                        <p class="card-text"><strong>Instructions:</strong><p>
+                        <a href="/lentilsoup">View Recipe</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

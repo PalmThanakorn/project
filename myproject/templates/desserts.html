@@ -1,0 +1,51 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+    About
+{% endblock %}
+
+{% block content %}
+<title>Dessert Cards</title>
+</head>
+<body>
+    <div class="card-container">
+        <div class="row">
+            <!-- Card 1: Chocolate Cake -->
+           
+                <div class="card">
+                    <img src="media/Chocolate Velvet Cake.jpg" class="card-img-top" alt="Chocolate Cake">
+                    <div class="card-body">
+                        <h5 class="card-title">Chocolate Velvet Cake</h5>
+                        <p class="card-text"><strong>Ingredients:</strong> </p>
+                        <p class="card-text"><strong>Instructions:</strong></p>
+                        <a href="/chocolatevelvetcake">View Recipe</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 2: Cheesecake -->
+            
+                <div class="card">
+                    <img src="media\cheesecake.jpg" class="card-img-top" alt="Cheesecake">
+                    <div class="card-body">
+                        <h5 class="card-title">Cheesecake</h5>
+                        <p class="card-text"><strong>Ingredients:</strong></p>
+                        <p class="card-text"><strong>Instructions:</strong></p>
+                        <a href="/cheesecake">View Recipe</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 3: Tiramisu -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="media\tiramisu.jpg" class="card-img-top" alt="Tiramisu">
+                    <div class="card-body">
+                        <h5 class="card-title">Tiramisu</h5>
+                        <p class="card-text"><strong>Ingredients:</strong> </p>
+                        <p class="card-text"><strong>Instructions:</strong> </p>
+                        <a href="/tiramisu">View Recipe</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

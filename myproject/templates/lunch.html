@@ -1,0 +1,44 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+   Lunch
+{% endblock %}
+
+{% block content %}
+<h1> Dinner Recipes</h1>
+<div class="card-container">
+   
+<div class="card">
+    <h1>Shrimp Fried Rice</h1>
+    <img src="media/ShrimpFriedRice.jpg" class="card-img-top" alt="Shrimp Fried Rice">
+    <div class="card-content">
+        <h3>Shrimp Fried Rice</h3>
+        <p><strong>Ingredients:</strong> Shrimp, rice, vegetables, soy sauce.</p>
+        <p><strong>Instructions:</strong> Stir fry shrimp and vegetables, add rice and soy sauce, and mix well.</p>
+        <a href="/shrimpfriedrice" class="btn">View Recipe</a>
+    </div>
+</div>
+</div>
+<div class="card-container">
+    <div class="card"></div>
+    <h1>Lunch</h1>
+    <img src="media/BirriaTacos.jpg" alt="Beef Tacos">
+    <div class="card-content">
+        <h3>BirriaTacos</h3>
+        <p><strong>Ingredients:</strong> Beef, tortillas, salsa, cheese, avocado.</p>
+        <p><strong>Instructions:</strong> Cook beef, assemble in tortillas with toppings, and serve.</p>
+        <a href="/BirriaTacos"class="btn">View Recipe</a>
+    </div>
+</div>
+<div class="card">
+    <h1>Vegetable Stir Fry</h1>
+    <img src="media/Vegetable Stir Fry.jpg" class="card-img-top" alt="Vegetable Stir Fry">
+    <div class="card-content">
+        <h3>Vegetable Stir Fry</h3>
+        <p><strong>Ingredients:</strong> Mixed vegetables, soy sauce, garlic, ginger.</p>
+        <p><strong>Instructions:</strong> Stir fry vegetables with garlic and ginger, add soy sauce, and serve hot.</p>
+        <a href="/vegetablestirfry" class="btn">View Recipe</a>
+    </div>
+</div>
+    
+{% endblock %}

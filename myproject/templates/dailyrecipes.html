@@ -1,0 +1,52 @@
+{% extends 'layout.html' %}
+
+{% load static %}
+
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+<script src="{% static 'js/main.js' %}" defer></script>
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block content %}
+
+        <div class="video-container">
+            <h1>Chef Special</h1>
+            <iframe width="550" height="350" src="https://www.youtube.com/embed/jeRC_6BRd4w" frameborder="0" allowfullscreen></iframe>
+        </div>
+        
+            <div class="card-container">
+                <div class="card"></div>
+                <h1>Breakfast</h1>
+                <img src="media/pancakes.jpg" class="card-img-top" alt="pancakes">
+                <div class="card-content">
+                    <h3>pancakes</h3>
+                    <p><strong>Ingredients:</strong> Flour, eggs, milk, sugar, baking powder.</p>
+                    <p><strong>Instructions:</strong> Mix ingredients, cook on a griddle, and serve with syrup.</p>
+                    <a href="/pancakes"class="btn">View Recipe</a>
+                </div>
+            </div>
+            <div class="card-container">
+                <div class="card"></div>
+                <h1>Lunch</h1>
+                <img src="media/BirriaTacos.jpg" alt="Beef Tacos">
+                <div class="card-content">
+                    <h3>BirriaTacos</h3>
+                    <p><strong>Ingredients:</strong> Beef, tortillas, salsa, cheese, avocado.</p>
+                    <p><strong>Instructions:</strong> Cook beef, assemble in tortillas with toppings, and serve.</p>
+                    <a href="/BirriaTacos"class="btn">View Recipe</a>
+                </div>
+            </div>
+            <div class="card-container">
+                <div class="card"></div>
+                <h1>Dessert</h1>
+                <img src="media/tiramisu.jpg" class="card-img-top" alt="Tiramisu">
+                <div class="card-content">
+                    <h3>Tiramisu</h3>
+                    <p><strong>Ingredients:</strong> </p>
+                    <p><strong>Instructions:</strong> </p>
+                    <a href="/tiramisu"class="btn">View Recipe</a>
+                </div>
+            </div>
+{% endblock %}

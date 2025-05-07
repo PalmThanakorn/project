@@ -1,0 +1,30 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+    Holiday Meals
+{% endblock %}
+
+{% block content %}
+<div class="card-container">
+    <div class="card">
+        <img src="media/avocado-toast.jpg" alt="Avocado Toast">
+        <div class="card-title">Avocado Toast</div>
+        <div class="card-description">Creamy avocado spread on toasted bread, topped with a sprinkle of salt and pepper. A quick and nutritious breakfast option.</div>
+        <a href="/avocado-toast" class="btn">View Recipe</a>
+    </div>
+    <div class="card-container">
+    <div class="card">
+        <img src="media/Pancakes.jpg" alt="Pancakes">
+        <div class="card-title">Pancakes</div>
+        <div class="card-description">Fluffy pancakes made with perfect for a sweet start to your day. Easy to make and delicious!</div>
+        <a href="/pancakes" class="btn">View Recipe</a>
+    </div>
+    <div class="card-container">
+    <div class="card">
+        <img src="media/yogurt-parfait.jpg" alt="Yogurt Parfait">
+        <div class="card-title">Yogurt Parfait</div>
+        <div class="card-description">Layers of creamy yogurt, fresh fruits, and granola make this parfait a refreshing and healthy breakfast choice.</div>
+        <a href="/yogurt-parfait" class="btn">View Recipe</a>
+    </div>
+</div>
+{% endblock %}

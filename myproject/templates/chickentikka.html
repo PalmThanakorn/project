@@ -1,0 +1,29 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+    Chicken Tikka Masala Recipe
+{% endblock %}
+
+{% block content %}
+    <h1>Chicken Tikka Masala</h1>
+    <img src="{% static 'images/chicken_tikka_masala.jpg' %}" alt="Chicken Tikka Masala" />
+
+    <div class="ingredients">
+        <h2>Ingredients:</h2>
+        <ul>
+            {% for ingredient in ingredients %}
+                <li>{{ ingredient }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    <div class="instructions">
+        <h2>Instructions:</h2>
+        <ol>
+            {% for step in instructions %}
+                <li>{{ step }}</li>
+            {% endfor %}
+            
+        </ol>
+    </div>
+{% endblock %}

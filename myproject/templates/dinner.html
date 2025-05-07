@@ -1,0 +1,44 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+   Dinner
+{% endblock %}
+
+{% block content %}
+<h1> Dinner Recipes</h1>
+
+<div class="card-container">
+    <div class="card">
+        <h1>Spaghetti </h1>
+        <img src="media/spaghetti.jpg" class="card-img-top" alt="Spaghetti">
+        <div class="card-content">
+            <h3>Spaghetti </h3>
+            <p><strong>Ingredients:</strong> Spaghetti, eggs, cheese, pancetta, pepper.</p>
+            <p><strong>Instructions:</strong> Cook spaghetti, mix with beaten eggs and cheese, add pancetta, and season with pepper.</p>
+            <a href="/spaghetti" class="btn">View Recipe</a>
+        </div>
+    </div>
+    <div class="card">
+        <h1>Mushroom Risotto</h1>
+        <img src="media/Mushroom Risotto.jpg" class="card-img-top" alt="Mushroom Risotto">
+        <div class="card-content">
+            <h3>Mushroom Risotto</h3>
+            <p><strong>Ingredients:</strong> Arborio rice, mushrooms, broth, parmesan cheese.</p>
+            <p><strong>Instructions:</strong> Cook rice slowly with broth, add mushrooms, and finish with cheese.</p>
+            <a href="/mushroomrisotto" class="btn">View Recipe</a>
+        </div>
+    </div>
+</div>
+<div class="card">
+    <h1>Chicken Tikka Masala</h1>
+    <img src="media/ChickenTikkaMasala.jpg" class="card-img-top" alt="Chicken Tikka Masala">
+    <div class="card-content">
+        <h3>Chicken Tikka Masala</h3>
+        <p><strong>Ingredients:</strong> Chicken, yogurt, spices, tomato sauce, cream.</p>
+        <p><strong>Instructions:</strong> Marinate chicken in yogurt and spices, grill, then simmer in tomato sauce and cream.</p>
+        <a href="/chickentikka" class="btn">View Recipe</a>
+    </div>
+</div>
+
+    
+{% endblock %}

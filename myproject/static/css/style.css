@@ -1,0 +1,151 @@
+/* Navbar Styles */
+ul {
+    list-style: none;
+    background: rgb(80, 80, 219);
+}
+
+ul li {
+    display: inline-block;
+    position: relative;
+}
+
+ul li a {
+    display: block;
+    padding: 20px 25px;
+    color: #FFF;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+}
+
+ul li ul.dropdown li {
+    display: block;
+}
+
+ul li ul.dropdown {
+    width: 100%;
+    background: rgb(80, 80, 219);
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+
+ul li a:hover {
+    background: rgb(80, 80, 219);
+}
+
+ul li:hover ul.dropdown {
+    display: block;
+}
+
+
+/* Footer Styles */
+footer {
+    background-color: #007BFF; /* Main color (Blue) for footer */
+    color: white; /* White text in footer */
+    padding: 20px; /* Padding for footer */
+}
+
+.footer-container {
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Wrap items on smaller screens */
+    justify-content: space-between; /* Space between sections */
+}
+
+.footer-section {
+    flex: 1 1 25%; /* Responsive sections - each takes up 25% of the width */
+    padding: 10px; /* Padding within sections */
+}
+
+.footer-bottom {
+    text-align: center; /* Center text in footer bottom */
+    margin-top: 20px; /* Margin above the footer bottom */
+}
+
+/* Global Styles */
+body {
+    background-color: white; /* Setting the background color to white */
+
+}
+
+
+/* Card Styles */
+    
+*{
+    margin:0px;
+    padding:0px;
+    text-size-adjust: 15%;
+    box-sizing: border-box; font-family: sans-serif;
+    }
+    body
+    {
+    background-color: #f0f0f0;
+    }
+
+    .card-container
+    {
+    margin: auto;
+    max-width: 100px;
+    display: flex;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    }
+    .card{
+    width:325px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+    margin:20px;
+    }
+    .card img{ 
+    width: 100%;
+    display: block;
+    height: auto;
+   
+    }
+    .card-content{
+        padding: 16px;
+    }
+    .card-content h3{
+        font-size: 28px;
+        margin-bottom: 8px;
+    }
+    .card-content p{
+        color:#666;
+        font-size: 15px;
+        line-height: 1.3;
+    } 
+    .card-content button{
+        display: inline-block;
+        background-color: #007BFF;
+        color: white;
+        border: none;
+        padding: 8px 16px;
+        border-radius: 4px;
+        cursor: pointer;
+        border-radius: 4px;
+        margin-top: 16px;
+        font-size: 16px;
+    }
+
+    .video-container-h1 {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 24px;
+        color: #0091ff;
+    }
+    .video-container {
+        display: flex; /* Use flexbox for centering */
+        justify-content: center; /* Center horizontally */
+        align-items: center; /* Center vertically (if needed) */
+        height: 100vh; /* Optional: Set height to fill the viewport */
+    }
+    
+    video {
+        max-width: 100%; /* Ensure the video is responsive */
+        height: auto; /* Maintain aspect ratio */
+    }

@@ -1,0 +1,134 @@
+    <!DOCTYPE html>
+    {% load static %}
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            {% block title %}
+                Django App
+            {% endblock %}
+        </title>
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+        <script src='js/main.js' defer></script>
+        
+    </head>
+    <body>
+        <nav>
+            <a href="/">
+                <span role="img" aria-label="Home" title="Home">Home</span>
+            </a> | 
+            <a href="/about">
+                <span role="img" aria-label="About" title="About">About</span>
+            </a> | 
+            <div class="dropdown">
+                <button onclick="toggleDropdown('dropdown1')"class="dropbtn">daily Recipes</button><a href="/dailyrecipes">daily recipes</a>
+                <div id="dropdown1" class="dropdown-content">
+                    <a href="/breakfast">Breakfast</a>
+                    <a href="/lunch">Lunch</a>
+                    <a href="/dinner">Dinner</a>
+                    <a href="/desserts">Desert</a>
+                    
+                </div>
+            </a> |
+            </div>
+            <div class="dropdown">
+                <button onclick="toggleDropdown('dropdown1')" class="dropbtn">fun</button>
+                <div id="dropdown1" class="dropdown-content">
+                    <a href="/desert">Desert</a>
+                    <a href="/vegetarian">health and diet</a>
+                    <a href="/holidays">Holidays</a>
+                </div>
+            </div>
+            </a> |
+
+            <a href="{% url 'posts:list' %}">
+                <span role="img" aria-label="Posts" title="Posts">Food Posting</span>
+            </a> | 
+
+            {% if user.is_authenticated %}
+                <a href="{% url 'posts:new-post' %}">
+                    <span role="img" aria-label="New Post" title="New Post">New Post</span>
+                </a> | 
+                <form class="logout" action="{% url 'users:logout' %}" method="post">
+                    {% csrf_token %} 
+                    <button class="logout-button" aria-label="User Logout" title="User Logout">Log Out</button>
+                </form>
+            {% else %}
+                <a href="{% url 'users:register' %}">
+                    <span role="img" aria-label="User Registration" title="User Registration">Register</span>
+                </a> | 
+                <a href="{% url 'users:login' %}">
+                    <span role="img" aria-label="User Login" title="User Login">User Profile</span>
+                </a>
+
+                <h1>Discover Your Next Adventure</h1>
+    <form id="search-form">
+        <input type="text" placeholder="Search..." id="search-input" />
+        <button type="submit">
+            <img src="search-icon.png" alt="Search" />
+        </button>
+    </form>
+            {% endif %}
+        </nav>
+
+        <main>
+            {% block content %}
+            {% endblock %}
+        </main>
+
+        <script>
+            function toggleDropdown(dropdownId) {
+                document.getElementById(dropdownId).classList.toggle("show");
+            }
+
+            // Close the dropdown if the user clicks outside of it
+            window.onclick = function(event) {
+                if (!event.target.matches('.dropbtn')) {
+                    var dropdowns = document.getElementsByClassName("dropdown-content");
+                    for (var i = 0; i < dropdowns.length; i++) {
+                        var openDropdown = dropdowns[i];
+                        if (openDropdown.classList.contains('show')) {
+                            openDropdown.classList.remove('show');
+                        }
+                    }
+                }
+            }
+        </script>
+
+        <footer>
+            <div class="footer-container">
+                <div class="footer-section">
+                    <h3>About Us</h3>
+                    <p>We are a leading company in providing quality services to our customers.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p>Email: **********@gmail.com</p>
+                    <p>Phone: +1 (234) 567-8901</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <ul class="social-media">
+                        <li><a href="#"><img src="github-icon.png" alt="Github"></a></li>
+                        <li><a href="#"><img src="instagram-icon.png" alt="Instagram"></a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Newsletter Signup</h3>
+                    <form action="#" method="post">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Your Company Name. All rights reserved.</p>
+            </div>
+        </footer>
+    </body>
+    </html>
