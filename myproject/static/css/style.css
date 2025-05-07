@@ -1,7 +1,13 @@
 /* Navbar Styles */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
 ul {
     list-style: none;
-    background: rgb(80, 80, 219);
+    background: #8c52ff;
 }
 
 ul li {
@@ -24,14 +30,14 @@ ul li ul.dropdown li {
 
 ul li ul.dropdown {
     width: 100%;
-    background: rgb(80, 80, 219);
+    background: #8c52ff;
     position: absolute;
     z-index: 999;
     display: none;
 }
 
 ul li a:hover {
-    background: rgb(80, 80, 219);
+    background: #6d30e9;
 }
 
 ul li:hover ul.dropdown {
@@ -144,8 +150,61 @@ body {
         align-items: center; /* Center vertically (if needed) */
         height: 100vh; /* Optional: Set height to fill the viewport */
     }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+
+    
     
     video {
         max-width: 100%; /* Ensure the video is responsive */
         height: auto; /* Maintain aspect ratio */
     }
+
+    .comment-section {
+        padding: 20px;
+        background-color: #f9f9f9; /* Light background for the comment section */
+        border-radius: 8px;
+        max-width: 600px;
+        margin: auto;
+    }
+    
+    h2 {
+        text-align: center;
+        color: #333; /* Darker text for the heading */
+    }
+    
+    .card-container {
+        display: flex;
+        flex-direction: column;
+        gap: 15px; /* Space between cards */
+    }
+    
+    .card {
+        background-color: #fff; /* White background for cards */
+        border: 1px solid #ddd; /* Light border */
+        border-radius: 5px;
+        padding: 15px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    }
+    
+    .card h3 {
+        margin: 0 0 10px; /* Space below the name */
+        color: #4CAF50; /* Green color for names */
+    }
+    
+    .card p {
+        margin: 0; /* Remove default margin */
+        color: #555; /* Dark grey for feedback text */
+    }
+    
